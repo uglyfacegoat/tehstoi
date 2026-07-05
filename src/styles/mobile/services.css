@@ -1,0 +1,420 @@
+@media (max-width: 900px) {
+  .servicesSection .serviceGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+  }
+
+  .servicesSection .serviceCard {
+    min-height: 190px !important;
+    padding: 20px 62px 58px 22px !important;
+    overflow: hidden !important;
+  }
+
+  .servicesSection .serviceCard:first-child,
+  .servicesSection .serviceCard:nth-child(4) {
+    grid-column: 1 / -1 !important;
+    min-height: 160px !important;
+  }
+
+  .servicesSection .serviceCard p {
+    max-width: 100% !important;
+    font-size: 15px !important;
+    line-height: 1.25 !important;
+  }
+
+  .servicesSection .serviceAsset {
+    opacity: 1 !important;
+    z-index: 1 !important;
+  }
+
+  .servicesSection .ratAsset {
+    right: 76px !important;
+    bottom: -6px !important;
+    width: 275px !important;
+  }
+
+  .servicesSection .bugAsset {
+    right: 42px !important;
+    bottom: -34px !important;
+    width: 205px !important;
+  }
+
+  .servicesSection .bacteriaAsset {
+    right: 40px !important;
+    bottom: -34px !important;
+    width: 205px !important;
+  }
+
+  .servicesSection .chemistryAsset {
+    right: 76px !important;
+    bottom: -4px !important;
+    width: 278px !important;
+  }
+
+  .servicesSection .routeAsset {
+    right: 44px !important;
+    bottom: -36px !important;
+    width: 230px !important;
+  }
+
+  .servicesSection .hazardAsset {
+    right: 40px !important;
+    bottom: -36px !important;
+    width: 248px !important;
+  }
+
+  .servicesSection .serviceFeature {
+    min-height: 360px !important;
+    overflow: hidden !important;
+  }
+
+  .servicesSection .featureCopy {
+    max-width: 68% !important;
+    position: relative !important;
+    z-index: 4 !important;
+  }
+
+  .servicesSection .serviceFeature .featureWorker {
+    display: block !important;
+    position: absolute !important;
+    z-index: 2 !important;
+    right: -4px !important;
+    bottom: -30px !important;
+    width: 112px !important;
+    height: auto !important;
+    opacity: 1 !important;
+  }
+
+  .servicesSection .serviceFeature .featureMap {
+    display: block !important;
+    position: absolute !important;
+    z-index: 1 !important;
+    right: 10px !important;
+    left: auto !important;
+    bottom: 28px !important;
+    width: 168px !important;
+  }
+
+  .servicesSection .docsIndustry {
+    grid-column: 1 / -1 !important;
+    width: auto !important;
+    min-height: 170px !important;
+    padding: 22px 250px 22px 22px !important;
+  }
+
+  .servicesSection .docsIndustry button {
+    left: 22px !important;
+    bottom: 20px !important;
+    right: auto !important;
+    top: auto !important;
+    transform: none !important;
+  }
+
+  .servicesSection .docsIndustry > img {
+    right: 12px !important;
+    bottom: -32px !important;
+    width: 190px !important;
+    height: auto !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .servicesSection .serviceCard {
+    min-height: 172px !important;
+    padding: 16px 54px 54px 14px !important;
+  }
+
+  .servicesSection .serviceCard p {
+    max-width: 100% !important;
+    font-size: 13px !important;
+  }
+
+  .servicesSection .ratAsset { right: 44px !important; bottom: -10px !important; width: 200px !important; }
+  .servicesSection .bugAsset,
+  .servicesSection .bacteriaAsset { right: 40px !important; width: 145px !important; }
+  .servicesSection .chemistryAsset { right: 58px !important; width: 210px !important; }
+  .servicesSection .routeAsset,
+  .servicesSection .hazardAsset { right: 34px !important; bottom: -34px !important; width: 165px !important; }
+
+  .servicesSection .docsIndustry {
+    padding-right: 150px !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .servicesSection .serviceCard p {
+    max-width: 100% !important;
+  }
+
+  .servicesSection .docsIndustry {
+    padding-right: 112px !important;
+  }
+
+  .servicesSection .docsIndustry > img {
+    width: 120px !important;
+  }
+}
+
+/* Figma node 3:2 mobile services alignment. */
+@media (max-width: 700px) {
+  .servicesSection .ratAsset {
+    right: 26px !important;
+    bottom: -1px !important;
+    width: 200px !important;
+  }
+
+  .servicesSection .bugAsset {
+    right: -118px !important;
+    bottom: -96px !important;
+    width: 245px !important;
+  }
+
+  .servicesSection .bacteriaAsset {
+    right: 8px !important;
+    bottom: -64px !important;
+    width: 199px !important;
+  }
+
+  .servicesSection .chemistryAsset {
+    right: 74px !important;
+    bottom: -26px !important;
+    width: 210px !important;
+  }
+
+  .servicesSection .routeAsset {
+    right: 14px !important;
+    bottom: -14px !important;
+    width: 165px !important;
+  }
+
+  .servicesSection .hazardAsset {
+    right: 13px !important;
+    bottom: -9px !important;
+    width: 165px !important;
+  }
+
+  .servicesSection .serviceFeature {
+    min-height: 360px !important;
+    padding: 27px 20px !important;
+  }
+
+  .servicesSection .serviceFeature .featureCopy {
+    max-width: 300px !important;
+  }
+
+  .servicesSection .serviceFeature .featureWorker {
+    right: -75px !important;
+    bottom: 11px !important;
+    width: 229px !important;
+  }
+
+  .servicesSection .serviceFeature .featureMap {
+    left: 20px !important;
+    right: auto !important;
+    bottom: 26px !important;
+    width: 168px !important;
+  }
+}
+
+/* Final mobile polish against the edited Figma phone frame. */
+@media (max-width: 700px) {
+  .servicesSection .serviceCard,
+  .servicesSection .industryCard {
+    min-width: 0 !important;
+  }
+
+  .servicesSection .serviceCard .cardHeader {
+    display: grid !important;
+    grid-template-columns: 32px minmax(0, 1fr) !important;
+    align-items: start !important;
+    gap: 10px !important;
+    max-width: 100% !important;
+  }
+
+  .servicesSection .serviceCard .cardHeader span {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    max-width: 32px !important;
+    flex: 0 0 32px !important;
+    border-radius: 6px !important;
+    font-size: 14px !important;
+    line-height: 32px !important;
+    padding: 0 !important;
+  }
+
+  .servicesSection .serviceCard .cardHeader strong {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    font-size: clamp(16px, 5.4vw, 21px) !important;
+    line-height: 0.96 !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
+  }
+
+  .servicesSection .serviceCard:first-child .cardHeader strong,
+  .servicesSection .serviceCard:nth-child(4) .cardHeader strong {
+    font-size: clamp(20px, 6.4vw, 25px) !important;
+  }
+
+  .servicesSection .serviceCard button {
+    right: 17px !important;
+    bottom: 17px !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 6px !important;
+  }
+
+  .servicesSection .serviceCard button svg {
+    width: 19px !important;
+    height: 19px !important;
+  }
+
+  .servicesSection .serviceFeature {
+    min-height: 360px !important;
+    padding: 27px 20px !important;
+  }
+
+  .servicesSection .serviceFeature .featureCopy {
+    max-width: 188px !important;
+    position: relative !important;
+    z-index: 5 !important;
+  }
+
+  .servicesSection .serviceFeature h3 {
+    font-size: 29px !important;
+    line-height: 0.92 !important;
+  }
+
+  .servicesSection .serviceFeature li {
+    max-width: 172px !important;
+    font-size: 14px !important;
+    line-height: 1.18 !important;
+  }
+
+  .servicesSection .serviceFeature .featureWorker {
+    right: -42px !important;
+    bottom: 11px !important;
+    width: 198px !important;
+    z-index: 2 !important;
+  }
+
+  .servicesSection .serviceFeature .featureMap {
+    left: 20px !important;
+    bottom: 26px !important;
+    width: 168px !important;
+    z-index: 1 !important;
+  }
+
+  .servicesSection .industryGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    overflow: visible !important;
+  }
+
+  .servicesSection .industryCard {
+    padding: 18px 14px 58px 14px !important;
+    min-height: 176px !important;
+    overflow: hidden !important;
+  }
+
+  .servicesSection .industryHead {
+    display: grid !important;
+    grid-template-columns: 30px minmax(0, 1fr) !important;
+    gap: 10px !important;
+    align-items: start !important;
+  }
+
+  .servicesSection .industryHead svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .servicesSection .industryHead strong {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    font-size: clamp(14px, 4.4vw, 17px) !important;
+    line-height: 0.98 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .servicesSection .industryCard p {
+    font-size: 12px !important;
+    line-height: 1.22 !important;
+    max-width: 122px !important;
+  }
+
+  .servicesSection .industryCard:not(.docsIndustry) button {
+    right: 12px !important;
+    bottom: 16px !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .servicesSection .docsIndustry {
+    min-height: 170px !important;
+    padding: 22px 126px 22px 22px !important;
+  }
+
+  .servicesSection .docsIndustry .industryHead {
+    grid-template-columns: 30px minmax(0, 1fr) !important;
+  }
+
+  .servicesSection .docsIndustry button {
+    left: 22px !important;
+    bottom: 18px !important;
+    width: 92px !important;
+    height: 36px !important;
+    font-size: 13px !important;
+  }
+
+  .servicesSection .docsIndustry > img {
+    right: 2px !important;
+    bottom: -18px !important;
+    width: 118px !important;
+  }
+}
+
+@media (max-width: 430px) {
+  .servicesSection .serviceCard:nth-child(2) .cardHeader strong,
+  .servicesSection .serviceCard:nth-child(3) .cardHeader strong,
+  .servicesSection .serviceCard:nth-child(5) .cardHeader strong,
+  .servicesSection .serviceCard:nth-child(6) .cardHeader strong {
+    font-size: 15px !important;
+    line-height: 0.98 !important;
+  }
+
+  .servicesSection .serviceCard:nth-child(2),
+  .servicesSection .serviceCard:nth-child(3),
+  .servicesSection .serviceCard:nth-child(5),
+  .servicesSection .serviceCard:nth-child(6) {
+    padding-left: 12px !important;
+    padding-right: 48px !important;
+  }
+
+  .servicesSection .serviceCard:nth-child(2) .cardHeader,
+  .servicesSection .serviceCard:nth-child(3) .cardHeader,
+  .servicesSection .serviceCard:nth-child(5) .cardHeader,
+  .servicesSection .serviceCard:nth-child(6) .cardHeader {
+    grid-template-columns: 32px minmax(0, 1fr) !important;
+    gap: 8px !important;
+  }
+
+  .servicesSection .serviceCard:nth-child(2) .cardHeader span,
+  .servicesSection .serviceCard:nth-child(3) .cardHeader span,
+  .servicesSection .serviceCard:nth-child(5) .cardHeader span,
+  .servicesSection .serviceCard:nth-child(6) .cardHeader span {
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    max-width: 32px !important;
+    line-height: 32px !important;
+    font-size: 14px !important;
+  }
+
+  .servicesSection .serviceFeature .featureWorker {
+    right: 4px !important;
+    bottom: 2px !important;
+    width: 142px !important;
+  }
+}

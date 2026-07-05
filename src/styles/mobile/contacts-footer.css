@@ -1,0 +1,56 @@
+@media (max-width: 900px) {
+  .contactsSection .requestBottom {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contactsSection .requestBottom button {
+    width: 100% !important;
+    min-height: 72px !important;
+    justify-content: center !important;
+    padding: 0 74px !important;
+  }
+
+  .contactsSection .requestBottom button svg {
+    right: 28px !important;
+  }
+
+  .siteFooter {
+    border-radius: 14px !important;
+  }
+
+  .siteFooter .footerCol strong::after {
+    content: none !important;
+  }
+
+  .siteFooter .footerContactCol strong::after {
+    content: "" !important;
+    display: block !important;
+    width: 18px !important;
+    height: 18px !important;
+    border-right: 3px solid #11120f !important;
+    border-bottom: 3px solid #11120f !important;
+    transform: rotate(45deg) translateY(-3px) !important;
+  }
+
+  .siteFooter .footerCol a,
+  .siteFooter .footerCol span {
+    display: none !important;
+  }
+
+  .siteFooter .footerContactCol a,
+  .siteFooter .footerContactCol span {
+    display: block !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .contactsSection .requestBottom button {
+    font-size: 22px !important;
+    line-height: 1.05 !important;
+    padding: 0 64px 0 28px !important;
+  }
+
+  .contactsSection .requestBottom button svg {
+    right: 24px !important;
+  }
+}

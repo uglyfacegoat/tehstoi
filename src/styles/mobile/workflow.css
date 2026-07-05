@@ -1,0 +1,275 @@
+@media (max-width: 900px) {
+  .workflowMapSection {
+    min-height: 0 !important;
+  }
+
+  .workflowScheme {
+    height: 980px !important;
+    margin-top: 22px !important;
+    overflow: visible !important;
+    isolation: isolate !important;
+  }
+
+  .workflowRouteAsset {
+    left: 0 !important;
+    top: 20px !important;
+    width: 100% !important;
+    height: 850px !important;
+    object-fit: contain !important;
+    object-position: center top !important;
+    transform: none !important;
+    z-index: 0 !important;
+  }
+
+  .workflowStep {
+    width: 190px !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    z-index: 10 !important;
+  }
+
+  .workflowStep svg,
+  .workflowStep strong,
+  .workflowStep p {
+    position: relative !important;
+    z-index: 11 !important;
+  }
+
+  .workflowStep strong {
+    display: inline !important;
+    background: rgba(238, 233, 222, 0.88) !important;
+    box-decoration-break: clone !important;
+    -webkit-box-decoration-break: clone !important;
+  }
+
+  .workflowStep p {
+    max-width: 190px !important;
+    background: rgba(238, 233, 222, 0.82) !important;
+    box-decoration-break: clone !important;
+    -webkit-box-decoration-break: clone !important;
+  }
+
+  .workflowStep-request { left: 15% !important; top: 82px !important; }
+  .workflowStep-inspect { right: 0 !important; top: 250px !important; }
+  .workflowStep-route { left: 8% !important; top: 430px !important; }
+  .workflowStep-work { right: 2% !important; top: 605px !important; }
+  .workflowStep-docs { left: 8% !important; top: 770px !important; }
+
+  .workflowBottomAsset {
+    display: none !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .workflowMapSection .workflowStep-inspect,
+  .workflowMapSection .workflowStep-work {
+    left: 172px !important;
+    width: 145px !important;
+  }
+
+  .workflowMapSection .workflowStep-inspect strong,
+  .workflowMapSection .workflowStep-work strong {
+    max-width: 145px !important;
+    font-size: 23px !important;
+  }
+
+  .workflowMapSection .workflowStep-inspect p,
+  .workflowMapSection .workflowStep-work p {
+    max-width: 145px !important;
+    font-size: 13px !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .workflowStep {
+    width: 145px !important;
+  }
+
+  .workflowStep strong {
+    font-size: 23px !important;
+  }
+
+  .workflowStep p {
+    max-width: 145px !important;
+    font-size: 13px !important;
+  }
+
+  .workflowStep-inspect,
+  .workflowStep-work {
+    left: 172px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .workflowScheme {
+    height: 930px !important;
+  }
+
+  .workflowRouteAsset {
+    height: 810px !important;
+  }
+
+  .workflowStep {
+    width: 168px !important;
+  }
+
+  .workflowStep strong {
+    font-size: 24px !important;
+  }
+
+  .workflowStep p {
+    font-size: 14px !important;
+    line-height: 1.28 !important;
+  }
+
+  .workflowStep-request { left: 12% !important; top: 58px !important; }
+  .workflowStep-inspect { right: -2px !important; top: 222px !important; }
+  .workflowStep-route { left: 4% !important; top: 390px !important; }
+  .workflowStep-work { right: 0 !important; top: 558px !important; }
+  .workflowStep-docs { left: 4% !important; top: 720px !important; }
+}
+
+@media (max-width: 420px) {
+  .workflowScheme {
+    height: 880px !important;
+  }
+
+  .workflowRouteAsset {
+    height: 810px !important;
+  }
+
+  .workflowStep {
+    width: 155px !important;
+  }
+
+  .workflowStep-request,
+  .workflowStep-route,
+  .workflowStep-docs {
+    left: 10% !important;
+  }
+
+  .workflowStep-inspect,
+  .workflowStep-work {
+    right: -2px !important;
+  }
+}
+
+/* Figma node 3:2 workflow alignment. */
+@media (max-width: 700px) {
+  .workflowMapHeader {
+    display: block !important;
+  }
+
+  .workflowMapHeader h2 {
+    margin-left: 0 !important;
+    max-width: 270px !important;
+    font-size: 64px !important;
+    line-height: 0.92 !important;
+  }
+
+  .workflowCoverageAsset {
+    display: block !important;
+    width: 375px !important;
+    max-width: none !important;
+    margin: 58px 0 0 -14px !important;
+  }
+
+  .workflowScheme {
+    height: 902px !important;
+    margin-top: 44px !important;
+    overflow: visible !important;
+  }
+
+  .workflowRouteAsset {
+    left: 0 !important;
+    top: 20px !important;
+    width: 350px !important;
+    height: 810px !important;
+    max-width: none !important;
+    object-fit: fill !important;
+    object-position: center !important;
+  }
+
+  .workflowStep {
+    width: 155px !important;
+    background: transparent !important;
+  }
+
+  .workflowStep strong {
+    display: block !important;
+    width: fit-content !important;
+    background: var(--paper) !important;
+    padding: 0 4px !important;
+    box-shadow: 0 0 0 5px var(--paper) !important;
+    box-decoration-break: clone !important;
+    -webkit-box-decoration-break: clone !important;
+    font-size: 25px !important;
+    line-height: 1 !important;
+  }
+
+  .workflowStep p {
+    max-width: 155px !important;
+    width: fit-content !important;
+    background: var(--paper) !important;
+    padding: 0 4px !important;
+    box-shadow: 0 0 0 4px var(--paper) !important;
+    box-decoration-break: clone !important;
+    -webkit-box-decoration-break: clone !important;
+    font-size: 14px !important;
+    line-height: 1.24 !important;
+  }
+
+  .workflowStep-request {
+    left: 65px !important;
+    top: 40px !important;
+    width: 246px !important;
+  }
+
+  .workflowStep-request p {
+    max-width: 246px !important;
+  }
+
+  .workflowStep-inspect {
+    left: 190px !important;
+    right: auto !important;
+    top: 239px !important;
+  }
+
+  .workflowStep-route {
+    left: 14px !important;
+    top: 433px !important;
+  }
+
+  .workflowStep-work {
+    left: 190px !important;
+    right: auto !important;
+    top: 643px !important;
+  }
+
+  .workflowStep-docs {
+    left: 32px !important;
+    top: 788px !important;
+    width: 286px !important;
+  }
+
+  .workflowStep-docs p {
+    margin-left: 150px !important;
+    margin-top: 12px !important;
+    max-width: 155px !important;
+  }
+
+  .workflowSafetyAsset {
+    display: block !important;
+    position: static !important;
+    width: 350px !important;
+    max-width: none !important;
+    height: auto !important;
+    margin: 22px 0 0 0 !important;
+    transform: none !important;
+  }
+
+  .workflowBottomAsset {
+    display: none !important;
+  }
+}

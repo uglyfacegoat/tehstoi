@@ -1,0 +1,126 @@
+@media (max-width: 900px) {
+  .pricingSection .priceTabs {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 0 !important;
+  }
+
+  .pricingSection .priceTable {
+    padding: 0 !important;
+  }
+
+  .pricingSection .priceHead,
+  .pricingSection .priceRow {
+    display: grid !important;
+    grid-template-columns: 44px minmax(210px, 1.3fr) 90px 145px 130px 18px !important;
+    gap: 12px !important;
+    align-items: center !important;
+  }
+
+  .pricingSection .priceHead {
+    padding: 22px 24px 16px !important;
+  }
+
+  .pricingSection .priceHead span:first-child {
+    grid-column: 2 !important;
+  }
+
+  .pricingSection .priceRow {
+    min-height: 82px !important;
+    padding: 14px 24px !important;
+  }
+
+  .pricingSection .priceRow strong,
+  .pricingSection .priceRow span,
+  .pricingSection .priceRow b {
+    grid-column: auto !important;
+    grid-row: auto !important;
+    white-space: normal !important;
+  }
+
+  .pricingSection .tableFoot {
+    grid-template-columns: 32px minmax(0, 1fr) 260px !important;
+    align-items: center !important;
+  }
+
+  .pricingSection .tableFoot span {
+    grid-column: 2 !important;
+    max-width: none !important;
+    font-size: 16px !important;
+    line-height: 1.28 !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .pricingSection .priceHead,
+  .pricingSection .priceRow {
+    display: grid !important;
+    grid-template-columns: 34px minmax(128px, 1fr) 44px 66px 72px 10px !important;
+    gap: 8px !important;
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .pricingSection .priceRow strong {
+    font-size: 14px !important;
+  }
+
+  .pricingSection .priceRow span,
+  .pricingSection .priceRow b {
+    font-size: 13px !important;
+  }
+
+  .pricingSection .tableFoot {
+    display: grid !important;
+    grid-template-columns: 28px minmax(0, 1fr) !important;
+  }
+
+  .pricingSection .tableFoot span {
+    grid-column: 2 !important;
+  }
+
+  .pricingSection .tableFoot button {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 420px) {
+  .pricingSection .priceHead,
+  .pricingSection .priceRow {
+    display: grid !important;
+    grid-template-columns: 28px minmax(112px, 1fr) 36px 54px 64px 10px !important;
+    gap: 6px !important;
+  }
+
+  .pricingSection .priceHead span,
+  .pricingSection .priceRow span,
+  .pricingSection .priceRow b {
+    font-size: 12px !important;
+  }
+
+  .pricingSection .tableFoot span {
+    font-size: 14px !important;
+  }
+}
+
+/* Figma node 3:2 pricing benefits alignment. */
+@media (max-width: 700px) {
+  .pricingSection .priceBenefits .benefit {
+    position: relative !important;
+    grid-template-columns: 42px minmax(0, 1fr) 18px !important;
+  }
+
+  .pricingSection .priceBenefits .benefit::after {
+    content: "" !important;
+    display: block !important;
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    align-self: center !important;
+    justify-self: end !important;
+    width: 10px !important;
+    height: 10px !important;
+    border-right: 2px solid #11120f !important;
+    border-bottom: 2px solid #11120f !important;
+    transform: rotate(-45deg) !important;
+  }
+}

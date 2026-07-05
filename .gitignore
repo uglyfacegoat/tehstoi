@@ -1,0 +1,12 @@
+node_modules/
+dist/
+test-results/
+.responsive-check/
+.agents/
+
+*.tsbuildinfo
+vite.config.d.ts
+vite.config.js
+
+.DS_Store
+Thumbs.db

@@ -1,0 +1,229 @@
+@media (max-width: 900px) {
+  .hero .photoScene {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 190px !important;
+    gap: 26px !important;
+    align-items: start !important;
+  }
+
+  .hero .photoFrame {
+    grid-column: 1 !important;
+    aspect-ratio: 1.18 / 1 !important;
+    overflow: visible !important;
+  }
+
+  .hero .mapNoteAsset {
+    display: block !important;
+    left: 24px !important;
+    top: 24px !important;
+    width: 142px !important;
+    z-index: 8 !important;
+  }
+
+  .hero .licenseNoteAsset {
+    display: block !important;
+    left: 28% !important;
+    bottom: -54px !important;
+    width: min(365px, 43vw) !important;
+    z-index: 9 !important;
+  }
+
+  .hero .danger {
+    grid-column: 2 !important;
+    margin-top: 8px !important;
+  }
+
+  .hero .danger div {
+    overflow: hidden !important;
+  }
+
+  .hero .danger span {
+    min-width: 0 !important;
+  }
+
+  .hero .factPanel {
+    margin-top: 46px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero .photoScene {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero .mapNoteAsset {
+    width: 118px !important;
+    left: 18px !important;
+    top: 18px !important;
+  }
+
+  .hero .licenseNoteAsset {
+    left: 17% !important;
+    bottom: -42px !important;
+    width: min(305px, 72vw) !important;
+  }
+
+  .hero .danger {
+    grid-column: 1 !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+}
+
+/* Figma node 3:2 mobile hero alignment. */
+@media (max-width: 700px) {
+  .hero .photoScene {
+    display: block !important;
+    position: relative !important;
+    min-height: calc((100vw - 40px) * 0.847 + 232px) !important;
+  }
+
+  .hero .photoFrame {
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 350 / 297 !important;
+    overflow: hidden !important;
+  }
+
+  .hero .mapNoteAsset {
+    left: 18px !important;
+    top: 18px !important;
+    width: 118px !important;
+  }
+
+  .hero .licenseNoteAsset {
+    left: 8.86% !important;
+    top: calc((100vw - 40px) * 0.635) !important;
+    bottom: auto !important;
+    width: 80.23% !important;
+  }
+
+  .hero .danger {
+    margin-top: 32px !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .hero .factGrid article {
+    padding-left: 28px !important;
+    padding-right: 18px !important;
+  }
+
+  .hero .factGrid article strong {
+    font-size: 50px !important;
+  }
+
+  .hero .factGrid article span,
+  .hero .factGrid article p {
+    font-size: 15px !important;
+  }
+}
+
+/* Keep the phone layout visually tied to the 390px Figma frame on wide mobile emulation. */
+@media (min-width: 431px) and (max-width: 700px) {
+  .page {
+    max-width: 430px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .page {
+    max-width: 430px !important;
+    padding: 22px 20px 36px !important;
+  }
+
+  .topbar {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) 42px 42px !important;
+    gap: 11px !important;
+    align-items: start !important;
+    margin: 0 0 38px !important;
+    padding: 0 !important;
+  }
+
+  .topbar nav,
+  .headerPhone,
+  .headerCta {
+    display: none !important;
+  }
+
+  .topbar::before {
+    content: "" !important;
+    display: block !important;
+    grid-column: 2 !important;
+    grid-row: 1 !important;
+    justify-self: center !important;
+    align-self: start !important;
+    width: 31px !important;
+    height: 31px !important;
+    margin-top: 2px !important;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='%2311120f' stroke-width='2.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.34 1.9.63 2.81a2 2 0 0 1-.45 2.11L8.02 9.91a16 16 0 0 0 6.07 6.07l1.27-1.27a2 2 0 0 1 2.11-.45c.91.29 1.85.5 2.81.63A2 2 0 0 1 22 16.92Z'/%3E%3C/svg%3E") center / contain no-repeat !important;
+  }
+
+  .topbar::after {
+    content: "" !important;
+    grid-column: 3 !important;
+    grid-row: 1 !important;
+    justify-self: end !important;
+    width: 38px !important;
+    height: 30px !important;
+    margin-top: 4px !important;
+    background:
+      linear-gradient(#11120f, #11120f) 0 2px / 38px 3px no-repeat,
+      linear-gradient(#11120f, #11120f) 0 14px / 38px 3px no-repeat,
+      linear-gradient(#11120f, #11120f) 0 26px / 38px 3px no-repeat !important;
+  }
+
+  .logo {
+    gap: 10px !important;
+    min-width: 0 !important;
+  }
+
+  .logoIcon {
+    flex-basis: 58px !important;
+    width: 58px !important;
+    height: 45px !important;
+  }
+
+  .logoIcon::before {
+    font-size: 45px !important;
+  }
+
+  .logoText strong {
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+
+  .logoText small {
+    max-width: 170px !important;
+    font-size: 9px !important;
+    line-height: 1.2 !important;
+  }
+
+  .titleBlock h1 {
+    font-size: clamp(43px, 10.1vw, 58px) !important;
+    line-height: 1.04 !important;
+  }
+
+  .titleBlock p {
+    margin-top: 20px !important;
+    font-size: 20px !important;
+    line-height: 1.36 !important;
+  }
+
+  .primary,
+  .secondary {
+    min-height: 70px !important;
+    padding: 0 64px 0 28px !important;
+    font-size: 18px !important;
+  }
+
+  .hero .photoScene {
+    min-height: clamp(503px, calc((100vw - 40px) * 0.847 + 232px), 562px) !important;
+  }
+
+  .hero .licenseNoteAsset {
+    top: clamp(203px, calc((100vw - 40px) * 0.635), 248px) !important;
+  }
+}
