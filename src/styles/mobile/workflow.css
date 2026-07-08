@@ -1,3 +1,16 @@
+@media (max-width: 900px) {
+  .workflowMapSection .workflowStep svg,
+  .workflowMapSection .workflowStep strong,
+  .workflowMapSection .workflowStep p {
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .workflowMapSection .workflowStep-work strong {
+    box-shadow: none !important;
+  }
+}
+
 @media (max-width: 700px) {
   .workflowMapSection {
     --workflow-width: min(calc(100vw - 30px), 350px);
@@ -105,8 +118,8 @@
     width: clamp(30px, 9.2vw, 36px) !important;
     height: clamp(30px, 9.2vw, 36px) !important;
     margin: 0 0 clamp(7px, 2.4vw, 10px) !important;
-    background: var(--workflow-paper-mask) !important;
-    box-shadow: 0 0 0 5px var(--workflow-paper-mask) !important;
+    background: transparent !important;
+    box-shadow: none !important;
   }
 
   .workflowStep strong,
@@ -114,7 +127,7 @@
     position: relative !important;
     z-index: 3 !important;
     max-width: 100% !important;
-    background: var(--workflow-paper-mask) !important;
+    background: transparent !important;
     box-decoration-break: clone !important;
     -webkit-box-decoration-break: clone !important;
   }
@@ -122,21 +135,21 @@
   .workflowStep strong {
     display: block !important;
     width: fit-content !important;
-    padding: 0 4px !important;
+    padding: 0 !important;
     font-size: var(--workflow-step-title) !important;
     line-height: 0.96 !important;
     letter-spacing: 0 !important;
-    box-shadow: 0 0 0 5px var(--workflow-paper-mask) !important;
+    box-shadow: none !important;
   }
 
   .workflowStep p {
     display: block !important;
     width: auto !important;
     margin-top: clamp(8px, 2.6vw, 12px) !important;
-    padding: 0 4px !important;
+    padding: 0 !important;
     font-size: var(--workflow-step-text) !important;
     line-height: 1.24 !important;
-    box-shadow: 0 0 0 4px var(--workflow-paper-mask) !important;
+    box-shadow: none !important;
   }
 
   .workflowStep-request {
@@ -176,8 +189,8 @@
   }
 
   .workflowStep-work {
-    left: 54% !important;
-    top: 48% !important;
+    left: 62% !important;
+    top: 45% !important;
     width: clamp(148px, 46%, 160px) !important;
   }
 
@@ -189,9 +202,7 @@
 
   .workflowStep-work strong {
     width: 100% !important;
-    box-shadow:
-      22px 10px 0 8px var(--workflow-paper-mask),
-      0 0 0 5px var(--workflow-paper-mask) !important;
+    box-shadow: none !important;
   }
 
   .workflowStep-docs {

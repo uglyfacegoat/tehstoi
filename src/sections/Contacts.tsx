@@ -148,6 +148,7 @@ function RequestDropdown({
 
 export function Contacts() {
   const [openSelect, setOpenSelect] = useState(false);
+  const [openFooterGroups, setOpenFooterGroups] = useState<string[]>([]);
   const [form, setForm] = useState<RequestState>({
     name: '',
     phone: '',
@@ -185,6 +186,14 @@ export function Contacts() {
 
     setOpenSelect(false);
     setResult('Заявка собрана. Специалист свяжется с вами и уточнит детали объекта.');
+  };
+
+  const toggleFooterGroup = (title: string) => {
+    setOpenFooterGroups((current) => (
+      current.includes(title)
+        ? current.filter((item) => item !== title)
+        : [...current, title]
+    ));
   };
 
   return (
@@ -307,8 +316,15 @@ export function Contacts() {
         <FooterLogo />
         <nav className="footerNav" aria-label="Навигация по сайту">
           {footerGroups.map((group) => (
-            <div className="footerCol" key={group.title}>
-              <strong>{group.title}</strong>
+            <div className={`footerCol${openFooterGroups.includes(group.title) ? ' isOpen' : ''}`} key={group.title}>
+              <button
+                className="footerColTrigger"
+                type="button"
+                aria-expanded={openFooterGroups.includes(group.title)}
+                onClick={() => toggleFooterGroup(group.title)}
+              >
+                <strong>{group.title}</strong>
+              </button>
               {group.links.map(([label, href]) => (
                 <a href={href} key={label}>{label}</a>
               ))}
