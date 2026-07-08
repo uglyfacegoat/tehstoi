@@ -1,4 +1,4 @@
-.siteSection {
+﻿.siteSection {
   position: relative;
   margin-top: 64px;
   padding: 10px 0 0;
@@ -1221,7 +1221,7 @@
 }
 
 .trustLaw li::before {
-  content: "✓";
+  content: "вњ“";
   margin-right: 10px;
   color: var(--orange);
   font-weight: 900;
@@ -3111,7 +3111,7 @@
 }
 
 .trustLaw li::before {
-  content: "✓";
+  content: "вњ“";
 }
 
 .licenseCard {
@@ -4858,36 +4858,36 @@
 }
 
 /* WORKFLOW MANUAL CONTROLS
-   Меняй left/top/width/transform у нужного селектора.
-   transform: rotate(0deg) scale(1) - поворот на 360 градусов и размер без деформации.
+   РњРµРЅСЏР№ left/top/width/transform Сѓ РЅСѓР¶РЅРѕРіРѕ СЃРµР»РµРєС‚РѕСЂР°.
+   transform: rotate(0deg) scale(1) - РїРѕРІРѕСЂРѕС‚ РЅР° 360 РіСЂР°РґСѓСЃРѕРІ Рё СЂР°Р·РјРµСЂ Р±РµР· РґРµС„РѕСЂРјР°С†РёРё.
 */
 .workflowVerticalArrow,
 .workflowFinishFlag {
   display: none !important;
 }
 
-/* Весь блок схемы */
+/* Р’РµСЃСЊ Р±Р»РѕРє СЃС…РµРјС‹ */
 .workflowMapSection {
   min-height: 920px;
 }
 
-/* Заголовок "Как мы работаем" */
+/* Р—Р°РіРѕР»РѕРІРѕРє "РљР°Рє РјС‹ СЂР°Р±РѕС‚Р°РµРј" */
 .workflowMapHeader h2 {
   transform: translate(0, 0) rotate(0deg) scale(1);
 }
 
-/* Описание справа от заголовка */
+/* РћРїРёСЃР°РЅРёРµ СЃРїСЂР°РІР° РѕС‚ Р·Р°РіРѕР»РѕРІРєР° */
 .workflowMapHeader p {
   transform: translate(0, 0) rotate(0deg) scale(1);
 }
 
-/* Карточка "Работаем по всей России" сверху справа */
+/* РљР°СЂС‚РѕС‡РєР° "Р Р°Р±РѕС‚Р°РµРј РїРѕ РІСЃРµР№ Р РѕСЃСЃРёРё" СЃРІРµСЂС…Сѓ СЃРїСЂР°РІР° */
 .workflowCoverageAsset {
   width: 320px;
   transform: translate(0, 0) rotate(0deg) scale(1);
 }
 
-/* Черный маршрут */
+/* Р§РµСЂРЅС‹Р№ РјР°СЂС€СЂСѓС‚ */
 .workflowRouteAsset {
   left: 74px;
   top: -176px;
@@ -4895,42 +4895,42 @@
   transform: rotate(0deg) scale(1);
 }
 
-/* Шаг 01 - Заявка */
+/* РЁР°Рі 01 - Р—Р°СЏРІРєР° */
 .workflowStep-request {
   left: 109px;
   top: 206px;
   transform: rotate(0deg) scale(1);
 }
 
-/* Шаг 02 - Осмотр объекта */
+/* РЁР°Рі 02 - РћСЃРјРѕС‚СЂ РѕР±СЉРµРєС‚Р° */
 .workflowStep-inspect {
   left: 380px;
   top: 154px;
   transform: rotate(0deg) scale(1);
 }
 
-/* Шаг 03 - Маршрутный лист / согласование */
+/* РЁР°Рі 03 - РњР°СЂС€СЂСѓС‚РЅС‹Р№ Р»РёСЃС‚ / СЃРѕРіР»Р°СЃРѕРІР°РЅРёРµ */
 .workflowStep-route {
   left: 672px;
   top: 318px;
   transform: rotate(0deg) scale(1);
 }
 
-/* Шаг 04 - Выполнение работ */
+/* РЁР°Рі 04 - Р’С‹РїРѕР»РЅРµРЅРёРµ СЂР°Р±РѕС‚ */
 .workflowStep-work {
   left: 878px;
   top: 160px;
   transform: rotate(0deg) scale(1);
 }
 
-/* Шаг 05 - Акт и документы */
+/* РЁР°Рі 05 - РђРєС‚ Рё РґРѕРєСѓРјРµРЅС‚С‹ */
 .workflowStep-docs {
   left: 1090px;
   top: 350px;
   transform: rotate(0deg) scale(1);
 }
 
-/* Билет "Безопасность и ответственность" */
+/* Р‘РёР»РµС‚ "Р‘РµР·РѕРїР°СЃРЅРѕСЃС‚СЊ Рё РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕСЃС‚СЊ" */
 .workflowSafetyAsset {
   left: 555px;
   top: 160px;
@@ -4938,7 +4938,7 @@
   transform: rotate(-2deg) scale(1);
 }
 
-/* Нижняя плашка с преимуществами */
+/* РќРёР¶РЅСЏСЏ РїР»Р°С€РєР° СЃ РїСЂРµРёРјСѓС‰РµСЃС‚РІР°РјРё */
 .workflowBottomAsset {
   left: 300px;
   bottom: 0px;
@@ -7311,7 +7311,7 @@
   }
 
   .priceRow::after {
-    content: "›";
+    content: "вЂє";
     grid-column: 6;
     font-size: 28px;
     line-height: 1;
@@ -7451,7 +7451,7 @@
   }
 
   .benefit::after {
-    content: "›";
+    content: "вЂє";
     font-size: 28px;
   }
 
@@ -7496,7 +7496,7 @@
     background: rgba(227, 219, 204, 0.65) !important;
   }
 
-  .trustActions a span {
+  .trustActions a:not(.trustControlButton) span {
     display: none !important;
   }
 
@@ -7746,7 +7746,7 @@
   }
 
   .footerCol strong::after {
-    content: "⌄";
+    content: "вЊ„";
     font-size: 28px;
     line-height: 1;
   }
@@ -8755,4 +8755,645 @@
   .workflowStep-route { left: 10% !important; top: 316px !important; }
   .workflowStep-work { right: -4px !important; top: 456px !important; }
   .workflowStep-docs { left: 10% !important; top: 586px !important; }
+}
+
+/* Desktop restore after the mobile-specific rebuild. */
+@media (min-width: 701px) {
+  .workflowMapSection {
+    min-height: 1060px !important;
+    overflow: hidden !important;
+  }
+
+  .workflowScheme {
+    position: relative !important;
+    height: 800px !important;
+    min-height: 800px !important;
+    margin-top: 34px !important;
+    overflow: visible !important;
+  }
+
+  .workflowScheme::before,
+  .workflowScheme::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  .workflowRouteAsset {
+    display: block !important;
+    position: absolute !important;
+    left: 48px !important;
+    top: 58px !important;
+    width: min(1260px, calc(100vw - 118px)) !important;
+    height: auto !important;
+    max-width: none !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    opacity: 1 !important;
+    transform: none !important;
+    z-index: 1 !important;
+  }
+
+  .workflowStep {
+    position: absolute !important;
+    z-index: 4 !important;
+    width: 220px !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .workflowStep::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  .workflowStep svg {
+    width: 42px !important;
+    height: 42px !important;
+    margin: 0 0 9px !important;
+  }
+
+  .workflowStep strong {
+    font-size: 26px !important;
+    line-height: 0.98 !important;
+  }
+
+  .workflowStep p {
+    max-width: 230px !important;
+    margin-top: 12px !important;
+    font-size: 16px !important;
+    line-height: 1.28 !important;
+  }
+
+  .workflowStep-request {
+    left: 82px !important;
+    top: 136px !important;
+  }
+
+  .workflowStep-inspect {
+    left: 345px !important;
+    top: 78px !important;
+  }
+
+  .workflowStep-route {
+    left: 575px !important;
+    top: 405px !important;
+  }
+
+  .workflowStep-work {
+    left: 870px !important;
+    top: 84px !important;
+  }
+
+  .workflowStep-docs {
+    left: 1085px !important;
+    top: 455px !important;
+  }
+
+  .workflowSafetyAsset {
+    display: block !important;
+    position: absolute !important;
+    left: 560px !important;
+    top: 78px !important;
+    width: 330px !important;
+    height: auto !important;
+    margin: 0 !important;
+    transform: rotate(-2deg) !important;
+    mix-blend-mode: multiply !important;
+    z-index: 3 !important;
+  }
+
+  .workflowBottomAsset {
+    display: block !important;
+    position: absolute !important;
+    left: 360px !important;
+    bottom: 12px !important;
+    width: 760px !important;
+    height: auto !important;
+    margin: 0 !important;
+    transform: none !important;
+    mix-blend-mode: multiply !important;
+    z-index: 2 !important;
+  }
+
+  .trustSection .licenseCards {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+    width: 100% !important;
+    max-width: 860px !important;
+    padding-bottom: 128px !important;
+    transform: none !important;
+    overflow: visible !important;
+  }
+
+  .trustSection .licenseAssetCard {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+    overflow: visible !important;
+    text-decoration: none !important;
+  }
+
+  .trustSection .licenseAssetCard img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    transform: none !important;
+    filter: drop-shadow(0 16px 26px rgba(17, 18, 15, 0.1));
+  }
+
+  .licenseFileCard {
+    display: grid !important;
+    grid-template-columns: 46px 1fr auto 22px;
+    align-items: center;
+    gap: 16px;
+    min-height: 86px;
+    padding: 18px 22px;
+    border: 1px solid rgba(17, 18, 15, 0.14);
+    border-radius: 8px;
+    color: #11120f;
+    background: rgba(238, 233, 222, 0.56);
+    text-decoration: none;
+  }
+
+  .licenseFileCard strong {
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  .licenseFileCard span {
+    color: rgba(17, 18, 15, 0.58);
+    font-size: 14px;
+    font-weight: 900;
+  }
+
+  .trustSection .trustFacts {
+    grid-column: 1 / -1 !important;
+    margin-top: 34px !important;
+  }
+}
+
+/* Workflow tuning notes:
+   Move the route picture: .workflowRouteAsset left/top/width.
+   Move cards/text/icons: .workflowStep-request, -inspect, -route, -work, -docs left/right/top.
+   Move the paper badges: .workflowSafetyAsset and .workflowBottomAsset left/top/bottom/width.
+   These rules are near the "Desktop restore after the mobile-specific rebuild" block above. */
+/* Real documents trust block: single source of truth. */
+.trustSectionPro {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 24px !important;
+  margin-top: 96px !important;
+  padding-top: 34px !important;
+  border-top: 1px solid rgba(17, 18, 15, 0.12) !important;
+  overflow: visible !important;
+}
+
+.trustSectionHead {
+  display: grid !important;
+  grid-template-columns: minmax(0, 0.82fr) minmax(360px, 0.58fr) !important;
+  gap: 46px !important;
+  align-items: end !important;
+}
+
+.trustSectionHead .sectionKicker {
+  grid-column: 1 / -1 !important;
+  margin: 0 0 6px !important;
+}
+
+.trustSectionHead h2 {
+  margin: 0 !important;
+  font-family: "Oswald", sans-serif !important;
+  font-size: 76px !important;
+  font-weight: 800 !important;
+  line-height: 0.94 !important;
+  letter-spacing: -0.04em !important;
+}
+
+.trustSectionHead p {
+  max-width: 560px !important;
+  margin: 0 !important;
+  color: #252520 !important;
+  font-size: 18px !important;
+  font-weight: 750 !important;
+  line-height: 1.46 !important;
+}
+
+.trustIntroPro {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  gap: 18px !important;
+  width: 100% !important;
+  position: static !important;
+}
+
+.trustActionsPro,
+.trustDownloadStack {
+  display: contents !important;
+}
+
+.trustControlButton {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) 28px !important;
+  align-items: center !important;
+  gap: 16px !important;
+  min-width: 0 !important;
+  min-height: 66px !important;
+  padding: 0 18px 0 20px !important;
+  border: 1px solid rgba(17, 18, 15, 0.18) !important;
+  border-radius: 7px !important;
+  background: rgba(238, 233, 222, 0.72) !important;
+  color: #11120f !important;
+  text-decoration: none !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+}
+
+.trustPrimaryAction.trustControlButton {
+  border-color: rgba(17, 18, 15, 0.28) !important;
+  background: var(--orange) !important;
+  color: #fff8e9 !important;
+}
+
+.trustControlButton span {
+  display: block !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  color: inherit !important;
+  font-size: 16px !important;
+  font-weight: 900 !important;
+  line-height: 1.12 !important;
+  letter-spacing: 0 !important;
+  text-align: left !important;
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important;
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+.trustControlButton svg {
+  display: block !important;
+  position: static !important;
+  grid-column: 2 !important;
+  width: 24px !important;
+  height: 24px !important;
+  justify-self: end !important;
+  align-self: center !important;
+  margin: 0 !important;
+  transform: none !important;
+  color: currentColor !important;
+  flex: 0 0 auto !important;
+}
+
+.licenseCardsPro,
+.trustSectionPro .licenseCards {
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) !important;
+  gap: 18px !important;
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 !important;
+  transform: none !important;
+  overflow: visible !important;
+}
+
+.trustNotePanel {
+  display: grid !important;
+  grid-template-columns: 42px minmax(0, 1fr) !important;
+  gap: 14px !important;
+  align-items: center !important;
+  margin: 0 !important;
+  padding: 18px 20px !important;
+  border: 1px solid rgba(17, 18, 15, 0.1) !important;
+  border-radius: 8px !important;
+  background: linear-gradient(90deg, rgba(250, 75, 20, 0.1), rgba(238, 233, 222, 0.72)) !important;
+}
+
+.trustNotePanel svg {
+  grid-row: 1 / span 2 !important;
+  color: var(--orange) !important;
+}
+
+.trustNotePanel strong {
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+}
+
+.trustNotePanel span {
+  grid-column: 2 !important;
+  color: rgba(17, 18, 15, 0.62) !important;
+  font-size: 14px !important;
+  font-weight: 800 !important;
+  line-height: 1.3 !important;
+}
+
+.documentGroup {
+  position: relative !important;
+  padding: 22px !important;
+  border: 1px solid rgba(17, 18, 15, 0.14) !important;
+  border-radius: 10px !important;
+  background:
+    linear-gradient(rgba(17, 18, 15, 0.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 18, 15, 0.018) 1px, transparent 1px),
+    rgba(238, 233, 222, 0.72) !important;
+  background-size: 42px 42px, 42px 42px, auto !important;
+  overflow: hidden !important;
+}
+
+.documentGroupHeader {
+  position: relative !important;
+  z-index: 1 !important;
+  display: grid !important;
+  grid-template-columns: minmax(0, 1fr) auto !important;
+  gap: 18px !important;
+  align-items: start !important;
+  margin-bottom: 18px !important;
+}
+
+.documentGroupHeader strong {
+  display: block !important;
+  font-family: "Oswald", sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  text-transform: uppercase !important;
+}
+
+.documentGroupHeader span {
+  display: block !important;
+  max-width: 720px !important;
+  margin-top: 8px !important;
+  color: rgba(17, 18, 15, 0.62) !important;
+  font-size: 15px !important;
+  font-weight: 800 !important;
+  line-height: 1.35 !important;
+}
+
+.documentGroupHeader a {
+  display: inline-grid !important;
+  grid-template-columns: 20px auto !important;
+  align-items: center !important;
+  gap: 10px !important;
+  min-height: 44px !important;
+  padding: 0 16px !important;
+  border: 1px solid rgba(17, 18, 15, 0.16) !important;
+  border-radius: 6px !important;
+  background: rgba(255, 255, 255, 0.24) !important;
+  color: #11120f !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+.documentPagesGrid {
+  position: relative !important;
+  z-index: 1 !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  gap: 16px !important;
+}
+
+.documentGroup--sanitary .documentPagesGrid,
+.documentGroup--company .documentPagesGrid {
+  grid-template-columns: minmax(190px, 0.36fr) !important;
+}
+
+.documentPageCard {
+  min-width: 0 !important;
+  display: grid !important;
+  gap: 10px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  color: inherit !important;
+  text-align: left !important;
+}
+
+.documentPageImage {
+  display: block !important;
+  aspect-ratio: 0.71 / 1 !important;
+  padding: 8px !important;
+  border: 1px solid rgba(17, 18, 15, 0.14) !important;
+  border-radius: 7px !important;
+  background: #f8f3ea !important;
+  box-shadow: 0 14px 26px rgba(17, 18, 15, 0.1) !important;
+  overflow: hidden !important;
+}
+
+.documentPageImage img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 3px !important;
+  object-fit: contain !important;
+  background: white !important;
+}
+
+.documentPageMeta {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 8px !important;
+}
+
+.documentPageMeta b {
+  font-size: 13px !important;
+  font-weight: 900 !important;
+}
+
+.documentPageMeta span {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  color: rgba(17, 18, 15, 0.58) !important;
+  font-size: 12px !important;
+  font-weight: 900 !important;
+}
+
+.trustFactsPro,
+.trustSectionPro .trustFacts {
+  display: grid !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  width: 100% !important;
+  height: auto !important;
+  margin-top: 10px !important;
+  grid-column: auto !important;
+}
+
+.documentZoomOverlay {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2147483000 !important;
+  display: grid !important;
+  place-items: center !important;
+  padding: 24px !important;
+}
+
+.documentZoomBackdrop {
+  position: absolute !important;
+  inset: 0 !important;
+  border: 0 !important;
+  background: rgba(17, 18, 15, 0.68) !important;
+  backdrop-filter: blur(5px) !important;
+}
+
+.documentZoomPanel {
+  position: relative !important;
+  z-index: 1 !important;
+  width: min(880px, calc(100vw - 32px)) !important;
+  max-height: min(860px, calc(100vh - 32px)) !important;
+  display: grid !important;
+  grid-template-rows: auto minmax(0, 1fr) auto !important;
+  border-radius: 10px !important;
+  background: #eee9de !important;
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.32) !important;
+  overflow: hidden !important;
+}
+
+.documentZoomTop {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 18px !important;
+  padding: 16px 18px !important;
+  border-bottom: 1px solid rgba(17, 18, 15, 0.12) !important;
+}
+
+.documentZoomTop button {
+  width: 42px !important;
+  height: 42px !important;
+  display: grid !important;
+  place-items: center !important;
+  border: 0 !important;
+  border-radius: 5px !important;
+  background: #11120f !important;
+  color: #fff8e9 !important;
+}
+
+.documentZoomScroll {
+  min-height: 0 !important;
+  overflow: auto !important;
+  padding: 18px !important;
+  background: rgba(17, 18, 15, 0.05) !important;
+}
+
+.documentZoomScroll img {
+  width: min(100%, 760px) !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  border-radius: 4px !important;
+  background: white !important;
+  box-shadow: 0 18px 40px rgba(17, 18, 15, 0.18) !important;
+}
+
+.documentZoomHint {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  min-height: 44px !important;
+  color: rgba(17, 18, 15, 0.62) !important;
+  font-size: 13px !important;
+  font-weight: 900 !important;
+}
+
+@media (max-width: 1199px) {
+  .trustSectionHead {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 18px !important;
+  }
+
+  .trustSectionHead p {
+    max-width: 760px !important;
+  }
+
+  .trustIntroPro {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .trustActionsPro,
+  .trustDownloadStack {
+    display: contents !important;
+  }
+
+  .documentPagesGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .trustSectionPro {
+    margin-top: 74px !important;
+    padding-top: 28px !important;
+  }
+
+  .trustSectionHead h2 {
+    font-size: clamp(58px, 8.2vw, 76px) !important;
+    letter-spacing: 0 !important;
+  }
+
+  .trustSectionHead p {
+    font-size: 22px !important;
+  }
+
+  .trustIntroPro {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .documentGroupHeader {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .documentGroupHeader a {
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .documentPagesGrid,
+  .documentGroup--sanitary .documentPagesGrid,
+  .documentGroup--company .documentPagesGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .trustFactsPro,
+  .trustSectionPro .trustFacts {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .trustControlButton > span {
+    display: block !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .trustSectionHead h2 {
+    font-size: clamp(48px, 12vw, 60px) !important;
+  }
+
+  .trustSectionHead p {
+    font-size: 19px !important;
+  }
+
+  .documentPagesGrid,
+  .documentGroup--sanitary .documentPagesGrid,
+  .documentGroup--company .documentPagesGrid,
+  .trustFactsPro,
+  .trustSectionPro .trustFacts {
+    grid-template-columns: minmax(0, 1fr) !important;
+  }
+
+  .trustControlButton > span {
+    display: block !important;
+  }
 }

@@ -1,275 +1,251 @@
-@media (max-width: 900px) {
+@media (max-width: 700px) {
   .workflowMapSection {
+    --workflow-width: min(calc(100vw - 30px), 350px);
+    --workflow-title-size: clamp(35px, 10.6vw, 41px);
+    --workflow-step-title: clamp(15px, 4.55vw, 18px);
+    --workflow-step-text: clamp(11px, 3.35vw, 13px);
+    --workflow-step-width: clamp(120px, 39%, 142px);
+    --workflow-paper-mask: var(--paper);
+
+    min-height: 0 !important;
+    overflow: visible !important;
+    padding-inline: max(14px, calc((100vw - 390px) / 2 + 14px)) !important;
+  }
+
+  .workflowMapHeader {
+    display: block !important;
     min-height: 0 !important;
   }
 
+  .workflowMapHeader h2 {
+    max-width: var(--workflow-width) !important;
+    margin: 0 !important;
+    font-size: var(--workflow-title-size) !important;
+    line-height: 0.92 !important;
+    letter-spacing: 0 !important;
+    white-space: nowrap !important;
+  }
+
+  .workflowMapHeader p {
+    max-width: var(--workflow-width) !important;
+    margin: clamp(42px, 12vw, 48px) 0 0 !important;
+    font-size: clamp(17px, 5.1vw, 20px) !important;
+    line-height: 1.34 !important;
+  }
+
+  .workflowCoverageAsset {
+    display: block !important;
+    width: min(72vw, 270px) !important;
+    max-width: none !important;
+    height: auto !important;
+    margin: clamp(34px, 10.5vw, 42px) auto 0 !important;
+    transform: none !important;
+  }
+
   .workflowScheme {
-    height: 980px !important;
-    margin-top: 22px !important;
+    position: relative !important;
+    width: var(--workflow-width) !important;
+    height: auto !important;
+    aspect-ratio: 350 / 1010 !important;
+    min-height: 0 !important;
+    margin: clamp(28px, 8vw, 34px) auto 0 !important;
     overflow: visible !important;
     isolation: isolate !important;
   }
 
   .workflowRouteAsset {
-    left: 0 !important;
-    top: 20px !important;
-    width: 100% !important;
-    height: 850px !important;
-    object-fit: contain !important;
-    object-position: center top !important;
-    transform: none !important;
-    z-index: 0 !important;
+    display: none !important;
+  }
+
+  .workflowScheme::before,
+  .workflowScheme::after {
+    content: "" !important;
+    position: absolute !important;
+    z-index: 1 !important;
+    display: block !important;
+    background-repeat: no-repeat !important;
+    background-position: left top !important;
+    background-size: contain !important;
+    pointer-events: none !important;
+  }
+
+  .workflowScheme::before {
+    left: 1% !important;
+    top: 11.4% !important;
+    width: 61.2% !important;
+    aspect-ratio: 214 / 182 !important;
+    background-image: url("/assets/workflow/route-mobile-top.png") !important;
+  }
+
+  .workflowScheme::after {
+    left: 1% !important;
+    top: 52% !important;
+    width: 76.6% !important;
+    aspect-ratio: 268 / 173 !important;
+    background-image: url("/assets/workflow/route-mobile-bottom.png") !important;
   }
 
   .workflowStep {
-    width: 190px !important;
+    position: absolute !important;
+    z-index: 2 !important;
+    width: var(--workflow-step-width) !important;
     background: transparent !important;
     border: 0 !important;
     box-shadow: none !important;
-    z-index: 10 !important;
+    color: #11120f !important;
   }
 
-  .workflowStep svg,
+  .workflowStep::before {
+    content: none !important;
+    display: none !important;
+  }
+
+  .workflowStep svg {
+    display: block !important;
+    width: clamp(30px, 9.2vw, 36px) !important;
+    height: clamp(30px, 9.2vw, 36px) !important;
+    margin: 0 0 clamp(7px, 2.4vw, 10px) !important;
+    background: var(--workflow-paper-mask) !important;
+    box-shadow: 0 0 0 5px var(--workflow-paper-mask) !important;
+  }
+
   .workflowStep strong,
   .workflowStep p {
     position: relative !important;
-    z-index: 11 !important;
-  }
-
-  .workflowStep strong {
-    display: inline !important;
-    background: rgba(238, 233, 222, 0.88) !important;
+    z-index: 3 !important;
+    max-width: 100% !important;
+    background: var(--workflow-paper-mask) !important;
     box-decoration-break: clone !important;
     -webkit-box-decoration-break: clone !important;
-  }
-
-  .workflowStep p {
-    max-width: 190px !important;
-    background: rgba(238, 233, 222, 0.82) !important;
-    box-decoration-break: clone !important;
-    -webkit-box-decoration-break: clone !important;
-  }
-
-  .workflowStep-request { left: 15% !important; top: 82px !important; }
-  .workflowStep-inspect { right: 0 !important; top: 250px !important; }
-  .workflowStep-route { left: 8% !important; top: 430px !important; }
-  .workflowStep-work { right: 2% !important; top: 605px !important; }
-  .workflowStep-docs { left: 8% !important; top: 770px !important; }
-
-  .workflowBottomAsset {
-    display: none !important;
-  }
-}
-
-@media (max-width: 370px) {
-  .workflowMapSection .workflowStep-inspect,
-  .workflowMapSection .workflowStep-work {
-    left: 172px !important;
-    width: 145px !important;
-  }
-
-  .workflowMapSection .workflowStep-inspect strong,
-  .workflowMapSection .workflowStep-work strong {
-    max-width: 145px !important;
-    font-size: 23px !important;
-  }
-
-  .workflowMapSection .workflowStep-inspect p,
-  .workflowMapSection .workflowStep-work p {
-    max-width: 145px !important;
-    font-size: 13px !important;
-  }
-}
-
-@media (max-width: 370px) {
-  .workflowStep {
-    width: 145px !important;
-  }
-
-  .workflowStep strong {
-    font-size: 23px !important;
-  }
-
-  .workflowStep p {
-    max-width: 145px !important;
-    font-size: 13px !important;
-  }
-
-  .workflowStep-inspect,
-  .workflowStep-work {
-    left: 172px !important;
-  }
-}
-
-@media (max-width: 700px) {
-  .workflowScheme {
-    height: 930px !important;
-  }
-
-  .workflowRouteAsset {
-    height: 810px !important;
-  }
-
-  .workflowStep {
-    width: 168px !important;
-  }
-
-  .workflowStep strong {
-    font-size: 24px !important;
-  }
-
-  .workflowStep p {
-    font-size: 14px !important;
-    line-height: 1.28 !important;
-  }
-
-  .workflowStep-request { left: 12% !important; top: 58px !important; }
-  .workflowStep-inspect { right: -2px !important; top: 222px !important; }
-  .workflowStep-route { left: 4% !important; top: 390px !important; }
-  .workflowStep-work { right: 0 !important; top: 558px !important; }
-  .workflowStep-docs { left: 4% !important; top: 720px !important; }
-}
-
-@media (max-width: 420px) {
-  .workflowScheme {
-    height: 880px !important;
-  }
-
-  .workflowRouteAsset {
-    height: 810px !important;
-  }
-
-  .workflowStep {
-    width: 155px !important;
-  }
-
-  .workflowStep-request,
-  .workflowStep-route,
-  .workflowStep-docs {
-    left: 10% !important;
-  }
-
-  .workflowStep-inspect,
-  .workflowStep-work {
-    right: -2px !important;
-  }
-}
-
-/* Figma node 3:2 workflow alignment. */
-@media (max-width: 700px) {
-  .workflowMapHeader {
-    display: block !important;
-  }
-
-  .workflowMapHeader h2 {
-    margin-left: 0 !important;
-    max-width: 270px !important;
-    font-size: 64px !important;
-    line-height: 0.92 !important;
-  }
-
-  .workflowCoverageAsset {
-    display: block !important;
-    width: 375px !important;
-    max-width: none !important;
-    margin: 58px 0 0 -14px !important;
-  }
-
-  .workflowScheme {
-    height: 902px !important;
-    margin-top: 44px !important;
-    overflow: visible !important;
-  }
-
-  .workflowRouteAsset {
-    left: 0 !important;
-    top: 20px !important;
-    width: 350px !important;
-    height: 810px !important;
-    max-width: none !important;
-    object-fit: fill !important;
-    object-position: center !important;
-  }
-
-  .workflowStep {
-    width: 155px !important;
-    background: transparent !important;
   }
 
   .workflowStep strong {
     display: block !important;
     width: fit-content !important;
-    background: var(--paper) !important;
     padding: 0 4px !important;
-    box-shadow: 0 0 0 5px var(--paper) !important;
-    box-decoration-break: clone !important;
-    -webkit-box-decoration-break: clone !important;
-    font-size: 25px !important;
-    line-height: 1 !important;
+    font-size: var(--workflow-step-title) !important;
+    line-height: 0.96 !important;
+    letter-spacing: 0 !important;
+    box-shadow: 0 0 0 5px var(--workflow-paper-mask) !important;
   }
 
   .workflowStep p {
-    max-width: 155px !important;
-    width: fit-content !important;
-    background: var(--paper) !important;
+    display: block !important;
+    width: auto !important;
+    margin-top: clamp(8px, 2.6vw, 12px) !important;
     padding: 0 4px !important;
-    box-shadow: 0 0 0 4px var(--paper) !important;
-    box-decoration-break: clone !important;
-    -webkit-box-decoration-break: clone !important;
-    font-size: 14px !important;
+    font-size: var(--workflow-step-text) !important;
     line-height: 1.24 !important;
+    box-shadow: 0 0 0 4px var(--workflow-paper-mask) !important;
   }
 
   .workflowStep-request {
-    left: 65px !important;
-    top: 40px !important;
-    width: 246px !important;
+    left: 12% !important;
+    top: 1% !important;
+    width: clamp(190px, 67%, 235px) !important;
   }
 
-  .workflowStep-request p {
-    max-width: 246px !important;
+  .workflowStep-request::before {
+    content: "1" !important;
+    left: clamp(-30px, -8.4vw, -26px) !important;
+    top: clamp(68px, 20vw, 76px) !important;
   }
 
   .workflowStep-inspect {
-    left: 190px !important;
-    right: auto !important;
-    top: 239px !important;
+    left: 61% !important;
+    top: 20% !important;
+    width: clamp(136px, 45%, 158px) !important;
+  }
+
+  .workflowStep-inspect::before {
+    content: "2" !important;
+    left: clamp(-24px, -6.8vw, -20px) !important;
+    top: clamp(-8px, -2vw, -5px) !important;
   }
 
   .workflowStep-route {
-    left: 14px !important;
-    top: 433px !important;
+    left: -5% !important;
+    top: 34% !important;
+    width: clamp(180px, 57%, 200px) !important;
+  }
+
+  .workflowStep-route::before {
+    content: "3" !important;
+    left: clamp(-26px, -7.1vw, -22px) !important;
+    top: clamp(154px, 44vw, 170px) !important;
   }
 
   .workflowStep-work {
-    left: 190px !important;
-    right: auto !important;
-    top: 643px !important;
+    left: 54% !important;
+    top: 48% !important;
+    width: clamp(148px, 46%, 160px) !important;
+  }
+
+  .workflowStep-work::before {
+    content: "4" !important;
+    left: clamp(-24px, -6.8vw, -20px) !important;
+    top: clamp(86px, 25vw, 96px) !important;
+  }
+
+  .workflowStep-work strong {
+    width: 100% !important;
+    box-shadow:
+      22px 10px 0 8px var(--workflow-paper-mask),
+      0 0 0 5px var(--workflow-paper-mask) !important;
   }
 
   .workflowStep-docs {
-    left: 32px !important;
-    top: 788px !important;
-    width: 286px !important;
+    left: 8.5% !important;
+    top: 75% !important;
+    width: clamp(276px, 88%, 308px) !important;
+  }
+
+  .workflowStep-docs::before {
+    content: "5" !important;
+    left: 0 !important;
+    top: clamp(-28px, -7.5vw, -24px) !important;
+  }
+
+  .workflowStep-docs strong {
+    max-width: clamp(116px, 40%, 132px) !important;
   }
 
   .workflowStep-docs p {
-    margin-left: 150px !important;
-    margin-top: 12px !important;
-    max-width: 155px !important;
+    position: absolute !important;
+    left: clamp(118px, 46%, 150px) !important;
+    top: clamp(69px, calc(21vw - 5px), 77px) !important;
+    max-width: clamp(118px, 42%, 148px) !important;
+    margin: 0 !important;
   }
 
   .workflowSafetyAsset {
     display: block !important;
     position: static !important;
-    width: 350px !important;
+    width: var(--workflow-width) !important;
     max-width: none !important;
     height: auto !important;
-    margin: 22px 0 0 0 !important;
+    margin: clamp(4px, 1.8vw, 8px) auto 0 !important;
     transform: none !important;
+    mix-blend-mode: multiply !important;
   }
 
   .workflowBottomAsset {
     display: none !important;
+  }
+}
+
+@media (max-width: 340px) {
+  .workflowStep-inspect {
+    left: 50% !important;
+    width: 140px !important;
+  }
+
+  .workflowStep-work {
+    left: 46% !important;
+    width: 150px !important;
+  }
+
+  .workflowStep-docs {
+    width: clamp(252px, 84%, 276px) !important;
   }
 }

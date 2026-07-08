@@ -67,6 +67,17 @@
     grid-column: 1 !important;
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
   }
+
+  .hero .danger div {
+    display: grid !important;
+    grid-template-columns: 52px minmax(0, 1fr) !important;
+    column-gap: 14px !important;
+    align-items: center !important;
+  }
+
+  .hero .danger span {
+    padding-left: 0 !important;
+  }
 }
 
 /* Figma node 3:2 mobile hero alignment. */

@@ -51,36 +51,129 @@
 }
 
 @media (max-width: 700px) {
+  .pricingSection .priceTabs {
+    gap: 10px !important;
+    padding: 0 14px 10px !important;
+    overflow: visible !important;
+  }
+
+  .pricingSection .priceTabs button {
+    min-height: 56px !important;
+    overflow: visible !important;
+  }
+
+  .pricingSection .priceTable {
+    overflow: hidden !important;
+  }
+
   .pricingSection .priceHead,
   .pricingSection .priceRow {
     display: grid !important;
-    grid-template-columns: 34px minmax(128px, 1fr) 44px 66px 72px 10px !important;
-    gap: 8px !important;
-    padding-left: 14px !important;
-    padding-right: 14px !important;
+    grid-template-columns: 156px 24px 44px 52px !important;
+    gap: 14px !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .pricingSection .priceHead {
+    margin: 0 !important;
+    padding-top: 20px !important;
+    padding-bottom: 14px !important;
+  }
+
+  .pricingSection .priceHead span:first-child {
+    grid-column: 1 !important;
+  }
+
+  .pricingSection .priceRow > svg {
+    display: none !important;
   }
 
   .pricingSection .priceRow strong {
-    font-size: 14px !important;
+    grid-column: 1 !important;
+    max-width: 128px !important;
+  }
+
+  .pricingSection .priceHead span:nth-child(2),
+  .pricingSection .priceRow span:nth-of-type(1) {
+    grid-column: 2 !important;
+  }
+
+  .pricingSection .priceHead span:nth-child(3),
+  .pricingSection .priceRow span:nth-of-type(2) {
+    grid-column: 3 !important;
+  }
+
+  .pricingSection .priceHead span:nth-child(4),
+  .pricingSection .priceRow b {
+    grid-column: 4 !important;
+  }
+
+  .pricingSection .priceRow::after {
+    display: none !important;
+  }
+
+  .pricingSection .priceRow strong {
+    font-size: 11px !important;
+    line-height: 1.08 !important;
+    white-space: normal !important;
+    overflow-wrap: normal !important;
+    word-break: normal !important;
   }
 
   .pricingSection .priceRow span,
   .pricingSection .priceRow b {
-    font-size: 13px !important;
+    display: block !important;
+    font-size: 10.5px !important;
+    line-height: 1.08 !important;
+    white-space: normal !important;
+  }
+
+  .pricingSection .priceHead span {
+    font-size: 10px !important;
+    line-height: 1.08 !important;
+  }
+
+  .pricingSection .priceHead small {
+    font-size: 9px !important;
+    line-height: 1 !important;
   }
 
   .pricingSection .tableFoot {
     display: grid !important;
     grid-template-columns: 28px minmax(0, 1fr) !important;
+    padding: 22px 10px 26px !important;
+    gap: 12px !important;
+  }
+
+  .pricingSection .tableFoot > svg {
+    display: block !important;
+    grid-column: 1 !important;
+    width: 24px !important;
+    height: 24px !important;
+    align-self: start !important;
   }
 
   .pricingSection .tableFoot span {
     grid-column: 2 !important;
+    justify-self: start !important;
+    text-align: left !important;
   }
 
   .pricingSection .tableFoot button {
     grid-column: 1 / -1 !important;
     width: 100% !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+  }
+
+  .pricingSection .tableFoot button svg {
+    display: block !important;
+    width: 18px !important;
+    height: 18px !important;
+    flex: 0 0 18px !important;
   }
 }
 
@@ -88,14 +181,21 @@
   .pricingSection .priceHead,
   .pricingSection .priceRow {
     display: grid !important;
-    grid-template-columns: 28px minmax(112px, 1fr) 36px 54px 64px 10px !important;
-    gap: 6px !important;
+    grid-template-columns: 94px 20px 38px 48px !important;
+    gap: 8px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
   }
 
   .pricingSection .priceHead span,
   .pricingSection .priceRow span,
   .pricingSection .priceRow b {
-    font-size: 12px !important;
+    font-size: 10px !important;
+  }
+
+  .pricingSection .priceRow strong {
+    max-width: 94px !important;
+    font-size: 10.5px !important;
   }
 
   .pricingSection .tableFoot span {
@@ -105,9 +205,27 @@
 
 /* Figma node 3:2 pricing benefits alignment. */
 @media (max-width: 700px) {
+  .pricingSection .priceBenefits {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    box-sizing: border-box !important;
+  }
+
   .pricingSection .priceBenefits .benefit {
     position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    overflow: visible !important;
     grid-template-columns: 42px minmax(0, 1fr) 18px !important;
+    padding: 18px 20px 18px 18px !important;
+    border: 1px solid rgba(17, 18, 15, 0.14) !important;
+    border-radius: 8px !important;
   }
 
   .pricingSection .priceBenefits .benefit::after {

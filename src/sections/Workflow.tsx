@@ -56,7 +56,7 @@ export function Workflow() {
       </div>
 
       <div className="workflowScheme">
-        <img className="workflowRouteAsset" src="/assets/workflow/route-path.png" alt="" />
+        <img className="workflowRouteAsset" src="/assets/workflow/route-desktop.png" alt="" />
 
         {steps.map(({ id, title, text, Icon }) => (
           <article className={`workflowStep workflowStep-${id}`} key={id}>
