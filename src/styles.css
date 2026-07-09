@@ -200,6 +200,14 @@ nav {
   font-weight: 700;
 }
 
+.headerPhone {
+  display: inline-flex;
+  align-items: center;
+  justify-self: end;
+  gap: 8px;
+  color: inherit;
+}
+
 .headerPhone strong,
 .headerPhone span {
   display: block;
@@ -220,6 +228,19 @@ nav {
   color: var(--muted);
   font-size: 11px;
   white-space: nowrap;
+}
+
+.mobileHeaderAction,
+.mobileMenuButton,
+.mobileMenuPanel {
+  display: none;
+}
+
+.mobileMenuButton {
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  padding: 0;
 }
 
 .headerCta,

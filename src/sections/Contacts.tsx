@@ -10,6 +10,7 @@ import {
   Phone,
   ShieldCheck,
 } from 'lucide-react';
+import { LogoMark } from '../components/LogoMark';
 
 const serviceOptions = [
   'Дератизация',
@@ -36,10 +37,7 @@ function FooterLogo() {
   return (
     <div className="footerBrand">
       <span className="logoIcon" aria-hidden="true">
-        <svg width="127" height="102" viewBox="0 0 127 102" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 2L2 12V20H29V21.5V68L52 82V78V75.5V20H55H83V2H10Z" fill="#181817" />
-          <path d="M125 4.5L67 37.5V100H84L123 78V59.5L90 75.5L87 74V54.5V48L125 25V8.5V4.5Z" fill="#F05A16" />
-        </svg>
+        <LogoMark />
       </span>
       <div>
         <strong>ТехСтройИнвест</strong>
@@ -340,8 +338,16 @@ export function Contacts() {
           ))}
           <div className="footerCol footerContactCol">
             <strong>Контакты</strong>
-            <a href="tel:+79782822822">+7 978 282-28-22</a>
-            <a href="tel:+79145458302">+7 914 545-83-02</a>
+            <a className="footerPhoneLink" href="tel:+79782822822">
+              <span>Санитарные услуги</span>
+              <strong>+7 978 282-28-22</strong>
+              <small>Елизавета, CPM</small>
+            </a>
+            <a className="footerPhoneLink" href="tel:+79145458302">
+              <span>Экология и утилизация</span>
+              <strong>+7 914 545-83-02</strong>
+              <small>Никита</small>
+            </a>
             <a href="mailto:texstroiinvest@inbox.ru">texstroiinvest@inbox.ru</a>
             <span>454008, г. Челябинск, ул. Линейная, д. 96, оф. 201</span>
           </div>

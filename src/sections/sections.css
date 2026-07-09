@@ -4301,6 +4301,32 @@
   color: var(--orange) !important;
 }
 
+.contactsSection .footerPhoneLink {
+  display: grid !important;
+  gap: 2px !important;
+  margin-bottom: 12px !important;
+}
+
+.contactsSection .footerPhoneLink span,
+.contactsSection .footerPhoneLink small {
+  display: block !important;
+  margin: 0 !important;
+  color: rgba(17, 18, 15, 0.68) !important;
+  font-size: 10px !important;
+  font-weight: 800 !important;
+  line-height: 1.15 !important;
+}
+
+.contactsSection .footerPhoneLink strong {
+  display: block !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  color: #11120f !important;
+  font-size: 13px !important;
+  font-weight: 950 !important;
+  line-height: 1.14 !important;
+}
+
 .contactsSection .footerContactCol span {
   max-width: 160px;
 }

@@ -1,16 +1,32 @@
-﻿import {
+﻿import { useState } from 'react';
+import {
   ArrowRight,
   ArrowUpRight,
   Factory,
   FileText,
   Grid3X3,
+  Menu,
   MousePointer2,
   Phone,
   Truck,
   UserRoundCheck,
+  X,
 } from 'lucide-react';
+import { LogoMark } from '../components/LogoMark';
 
-const nav = ['Услуги', 'Отрасли', 'Объекты', 'Документы', 'О компании', 'Контакты'];
+const nav = [
+  { label: 'Услуги', href: '#services' },
+  { label: 'Отрасли', href: '#services' },
+  { label: 'Объекты', href: '#waste' },
+  { label: 'Документы', href: '#trust' },
+  { label: 'О компании', href: '#trust' },
+  { label: 'Контакты', href: '#contacts' },
+];
+
+const phones = [
+  { label: 'Санитарные услуги', name: 'Елизавета, CPM', value: '+7 978 282-28-22', href: '+79782822822' },
+  { label: 'Экология и утилизация', name: 'Никита', value: '+7 914 545-83-02', href: '+79145458302' },
+];
 
 const steps = [
   { num: '01', title: 'Заявка', text: 'Оставьте заявку удобным способом', type: 'checklist' },
@@ -27,12 +43,9 @@ const facts = [
 
 function Logo() {
   return (
-    <a className="logo" href="#" aria-label="ТехСтройИнвест">
+    <a className="logo" href="#top" aria-label="ТехСтройИнвест">
       <span className="logoIcon" aria-hidden="true">
-        <svg width="127" height="102" viewBox="0 0 127 102" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M10 2L2 12V20H29V21.5V68L52 82V78V75.5V20H55H83V2H10Z" fill="#181817" />
-          <path d="M125 4.5L67 37.5V100H84L123 78V59.5L90 75.5L87 74V54.5V48L125 25V8.5V4.5Z" fill="#F05A16" />
-        </svg>
+        <LogoMark />
       </span>
       <span className="logoText">
         <strong>ТехСтройИнвест</strong>
@@ -43,18 +56,54 @@ function Logo() {
 }
 
 function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const mainPhone = phones[0];
+
+  const closeMenu = () => setIsMenuOpen(false);
+
   return (
     <header className="topbar">
       <Logo />
-      <nav aria-label="Основная навигация">
-        {nav.map((item) => <a href="#" key={item}>{item}</a>)}
+      <nav className="desktopNav" aria-label="Основная навигация">
+        {nav.map((item) => <a href={item.href} key={item.label}>{item.label}</a>)}
       </nav>
-      <div className="headerPhone">
+      <a className="headerPhone" href={`tel:${mainPhone.href}`} aria-label={`Позвонить: ${mainPhone.label}`}>
         <Phone className="headerPhoneIcon" size={21} strokeWidth={2.7} />
-        <strong>+7 978 282-28-22</strong>
-        <span>Пн-Пт 8:00-18:00</span>
-      </div>
-      <a className="headerCta" href="#">Оставить заявку <ArrowUpRight size={20} /></a>
+        <span className="headerPhoneText">
+          <strong>{mainPhone.value}</strong>
+          <span>{mainPhone.label}</span>
+        </span>
+      </a>
+      <a className="mobileHeaderAction mobilePhoneAction" href={`tel:${mainPhone.href}`} aria-label={`Позвонить: ${mainPhone.label}`}>
+        <Phone size={30} strokeWidth={2.5} />
+      </a>
+      <button
+        className="mobileMenuButton"
+        type="button"
+        aria-label={isMenuOpen ? 'Закрыть меню' : 'Открыть меню'}
+        aria-expanded={isMenuOpen}
+        aria-controls="mobile-menu"
+        onClick={() => setIsMenuOpen((current) => !current)}
+      >
+        {isMenuOpen ? <X size={34} strokeWidth={2.4} /> : <Menu size={38} strokeWidth={2.4} />}
+      </button>
+      <a className="headerCta" href="#contacts">Оставить заявку <ArrowUpRight size={20} /></a>
+      {isMenuOpen && (
+        <div className="mobileMenuPanel" id="mobile-menu">
+          <nav aria-label="Мобильная навигация">
+            {nav.map((item) => <a href={item.href} key={item.label} onClick={closeMenu}>{item.label}</a>)}
+          </nav>
+          <div className="mobileMenuPhones">
+            {phones.map((phone) => (
+              <a href={`tel:${phone.href}`} key={phone.href} onClick={closeMenu}>
+                <span>{phone.label}</span>
+                <strong>{phone.value}</strong>
+                <small>{phone.name}</small>
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </header>
   );
 }
@@ -140,13 +189,13 @@ export function Hero() {
   return (
     <>
       <Header />
-      <section className="hero">
+      <section className="hero" id="top">
         <div className="titleBlock">
           <h1>Санитарные услуги и утилизация отходов для бизнеса</h1>
           <p>Комплексное решение: от заявки до закрывающих документов. Работаем с отходами I-IV класса опасности.</p>
           <div className="actions">
-            <a className="primary" href="#">Оставить заявку <ArrowUpRight size={22} /></a>
-            <a className="secondary" href="#">Рассчитать объём <Grid3X3 size={21} /></a>
+            <a className="primary" href="#contacts">Оставить заявку <ArrowUpRight size={22} /></a>
+            <a className="secondary" href="#pricing">Рассчитать объём <Grid3X3 size={21} /></a>
           </div>
         </div>
         <HeroPhoto />
@@ -156,7 +205,7 @@ export function Hero() {
       <section className="nextLine">
         <h2>Решаем задачи вашего бизнеса</h2>
         <div className="slider"><i /></div>
-        <a href="#">Смотреть все услуги <MousePointer2 size={18} /></a>
+        <a href="#services">Смотреть все услуги <MousePointer2 size={18} /></a>
       </section>
     </>
   );
