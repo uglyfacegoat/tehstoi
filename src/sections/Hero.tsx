@@ -8,7 +8,6 @@ import {
   Menu,
   MousePointer2,
   Phone,
-  Send,
   Truck,
   UserRoundCheck,
   X,
@@ -91,21 +90,10 @@ function Header() {
       <a className="headerCta" href="#contacts">Оставить заявку <ArrowUpRight size={20} /></a>
       {isMenuOpen && (
         <div className="mobileMenuPanel" id="mobile-menu">
-          <div className="mobileMenuHead">
-            <span className="mobileMenuLogo" aria-hidden="true">
-              <LogoMark />
-            </span>
-            <div>
-              <strong>ТехСтройИнвест</strong>
-              <span>Санитарные услуги и утилизация отходов</span>
-            </div>
-          </div>
           <nav aria-label="Мобильная навигация">
-            {nav.map((item, index) => (
+            {nav.map((item) => (
               <a href={item.href} key={item.label} onClick={closeMenu}>
-                <small>{String(index + 1).padStart(2, '0')}</small>
                 <span>{item.label}</span>
-                <ArrowUpRight size={19} strokeWidth={2.2} />
               </a>
             ))}
           </nav>
@@ -119,7 +107,7 @@ function Header() {
             ))}
           </div>
           <a className="mobileMenuRequest" href="#contacts" onClick={closeMenu}>
-            Оставить заявку <Send size={19} strokeWidth={2.4} />
+            Оставить заявку
           </a>
         </div>
       )}
