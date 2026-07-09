@@ -51,7 +51,7 @@ function Header() {
       </nav>
       <div className="headerPhone">
         <Phone className="headerPhoneIcon" size={21} strokeWidth={2.7} />
-        <strong>8 800 775-22-45</strong>
+        <strong>+7 978 282-28-22</strong>
         <span>Пн-Пт 8:00-18:00</span>
       </div>
       <a className="headerCta" href="#">Оставить заявку <ArrowUpRight size={20} /></a>

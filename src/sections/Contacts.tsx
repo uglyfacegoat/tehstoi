@@ -224,9 +224,17 @@ export function Contacts() {
             <article>
               <Phone size={28} />
               <div>
-                <span>Телефон</span>
-                <strong>8 800 775-22-45</strong>
-                <small>Звонок по России бесплатный</small>
+                <span>Санитарные услуги</span>
+                <strong>+7 978 282-28-22</strong>
+                <small>Елизавета, CPM</small>
+              </div>
+            </article>
+            <article>
+              <Phone size={28} />
+              <div>
+                <span>Экология и утилизация</span>
+                <strong>+7 914 545-83-02</strong>
+                <small>Никита</small>
               </div>
             </article>
             <article>
@@ -241,7 +249,7 @@ export function Contacts() {
               <Mail size={28} />
               <div>
                 <span>E-mail</span>
-                <strong>info@tsinvest74.ru</strong>
+                <strong>texstroiinvest@inbox.ru</strong>
               </div>
             </article>
           </div>
@@ -332,8 +340,9 @@ export function Contacts() {
           ))}
           <div className="footerCol footerContactCol">
             <strong>Контакты</strong>
-            <a href="tel:88007752245">8 800 775-22-45</a>
-            <a href="mailto:info@tsinvest74.ru">info@tsinvest74.ru</a>
+            <a href="tel:+79782822822">+7 978 282-28-22</a>
+            <a href="tel:+79145458302">+7 914 545-83-02</a>
+            <a href="mailto:texstroiinvest@inbox.ru">texstroiinvest@inbox.ru</a>
             <span>454008, г. Челябинск, ул. Линейная, д. 96, оф. 201</span>
           </div>
         </nav>
