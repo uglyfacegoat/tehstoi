@@ -264,9 +264,10 @@
     width: 42px !important;
     height: 42px !important;
     color: #11120f !important;
-    border: 0 !important;
-    border-radius: 0 !important;
-    background: transparent !important;
+    border: 1px solid rgba(17, 18, 15, 0.2) !important;
+    border-radius: 8px !important;
+    background: rgba(255, 248, 233, 0.74) !important;
+    box-shadow: 0 8px 22px rgba(17, 18, 15, 0.08) !important;
   }
 
   .mobilePhoneAction {
@@ -281,34 +282,102 @@
     justify-self: end !important;
   }
 
+  .mobileMenuButton.isOpen {
+    background: #11120f !important;
+    color: #fff8e9 !important;
+    border-color: #11120f !important;
+  }
+
   .mobileMenuPanel {
     display: grid !important;
     grid-column: 1 / -1 !important;
-    gap: 16px !important;
-    margin-top: 10px !important;
-    padding: 18px !important;
-    border: 1px solid rgba(17, 18, 15, 0.18) !important;
+    gap: 14px !important;
+    margin-top: 12px !important;
+    padding: 16px !important;
+    border: 1px solid rgba(17, 18, 15, 0.2) !important;
     border-radius: 8px !important;
-    background: rgba(238, 233, 222, 0.98) !important;
-    box-shadow: 0 18px 48px rgba(17, 18, 15, 0.14) !important;
+    background:
+      linear-gradient(135deg, rgba(255, 248, 233, 0.98), rgba(238, 233, 222, 0.98)) !important;
+    box-shadow: 0 22px 58px rgba(17, 18, 15, 0.18) !important;
     z-index: 40 !important;
+  }
+
+  .mobileMenuHead {
+    display: grid !important;
+    grid-template-columns: 48px minmax(0, 1fr) !important;
+    gap: 12px !important;
+    align-items: center !important;
+    padding: 2px 0 14px !important;
+    border-bottom: 1px solid rgba(17, 18, 15, 0.16) !important;
+  }
+
+  .mobileMenuLogo {
+    display: block !important;
+    width: 48px !important;
+    height: 39px !important;
+  }
+
+  .mobileMenuLogo svg {
+    width: 100% !important;
+    height: 100% !important;
+  }
+
+  .mobileMenuHead strong,
+  .mobileMenuHead span {
+    display: block !important;
+  }
+
+  .mobileMenuHead strong {
+    color: #11120f !important;
+    font-size: 18px !important;
+    font-weight: 950 !important;
+    line-height: 1 !important;
+  }
+
+  .mobileMenuHead span {
+    margin-top: 4px !important;
+    color: rgba(17, 18, 15, 0.68) !important;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    line-height: 1.25 !important;
   }
 
   .mobileMenuPanel nav {
     display: grid !important;
-    gap: 0 !important;
+    gap: 8px !important;
     padding: 0 !important;
     overflow: visible !important;
     white-space: normal !important;
   }
 
   .mobileMenuPanel nav a {
-    padding: 13px 0 !important;
-    border-bottom: 1px solid rgba(17, 18, 15, 0.14) !important;
+    display: grid !important;
+    grid-template-columns: 34px minmax(0, 1fr) 24px !important;
+    gap: 10px !important;
+    align-items: center !important;
+    min-height: 48px !important;
+    padding: 0 12px !important;
+    border: 1px solid rgba(17, 18, 15, 0.12) !important;
+    border-radius: 7px !important;
+    background: rgba(255, 255, 255, 0.28) !important;
     color: #11120f !important;
-    font-size: 18px !important;
+    font-size: 17px !important;
     font-weight: 900 !important;
     line-height: 1.1 !important;
+  }
+
+  .mobileMenuPanel nav a small {
+    color: var(--orange) !important;
+    font-size: 12px !important;
+    font-weight: 950 !important;
+  }
+
+  .mobileMenuPanel nav a span {
+    min-width: 0 !important;
+  }
+
+  .mobileMenuPanel nav a svg {
+    justify-self: end !important;
   }
 
   .mobileMenuPhones {
@@ -318,15 +387,18 @@
 
   .mobileMenuPhones a {
     display: grid !important;
-    gap: 3px !important;
+    grid-template-columns: minmax(0, 1fr) 30px !important;
+    gap: 3px 12px !important;
+    align-items: center !important;
     padding: 13px 14px !important;
-    border: 1px solid rgba(17, 18, 15, 0.16) !important;
+    border: 1px solid rgba(250, 75, 20, 0.2) !important;
     border-radius: 7px !important;
-    background: rgba(255, 248, 233, 0.72) !important;
+    background: rgba(250, 75, 20, 0.08) !important;
   }
 
   .mobileMenuPhones span,
   .mobileMenuPhones small {
+    grid-column: 1 !important;
     color: rgba(17, 18, 15, 0.68) !important;
     font-size: 12px !important;
     font-weight: 800 !important;
@@ -334,9 +406,30 @@
   }
 
   .mobileMenuPhones strong {
+    grid-column: 1 !important;
     color: #11120f !important;
     font-size: 19px !important;
     font-weight: 950 !important;
     line-height: 1.12 !important;
+  }
+
+  .mobileMenuPhones svg {
+    grid-column: 2 !important;
+    grid-row: 1 / span 2 !important;
+    justify-self: end !important;
+    color: var(--orange) !important;
+  }
+
+  .mobileMenuRequest {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    min-height: 52px !important;
+    border-radius: 7px !important;
+    background: var(--orange) !important;
+    color: #fff8e9 !important;
+    font-size: 15px !important;
+    font-weight: 950 !important;
   }
 }
