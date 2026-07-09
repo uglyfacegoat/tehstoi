@@ -24,8 +24,8 @@ const nav = [
 ];
 
 const phones = [
-  { label: 'Санитарные услуги', name: 'Елизавета, CPM', value: '+7 978 282-28-22', href: '+79782822822' },
-  { label: 'Экология и утилизация', name: 'Никита', value: '+7 914 545-83-02', href: '+79145458302' },
+  { label: 'Санитарные услуги', value: '+7 978 282-28-22', href: '+79782822822' },
+  { label: 'Экология и утилизация', value: '+7 914 545-83-02', href: '+79145458302' },
 ];
 
 const steps = [
@@ -98,7 +98,6 @@ function Header() {
               <a href={`tel:${phone.href}`} key={phone.href} onClick={closeMenu}>
                 <span>{phone.label}</span>
                 <strong>{phone.value}</strong>
-                <small>{phone.name}</small>
               </a>
             ))}
           </div>

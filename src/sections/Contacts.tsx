@@ -224,7 +224,6 @@ export function Contacts() {
               <div>
                 <span>Санитарные услуги</span>
                 <strong>+7 978 282-28-22</strong>
-                <small>Елизавета, CPM</small>
               </div>
             </article>
             <article>
@@ -232,7 +231,6 @@ export function Contacts() {
               <div>
                 <span>Экология и утилизация</span>
                 <strong>+7 914 545-83-02</strong>
-                <small>Никита</small>
               </div>
             </article>
             <article>
@@ -341,12 +339,10 @@ export function Contacts() {
             <a className="footerPhoneLink" href="tel:+79782822822">
               <span>Санитарные услуги</span>
               <strong>+7 978 282-28-22</strong>
-              <small>Елизавета, CPM</small>
             </a>
             <a className="footerPhoneLink" href="tel:+79145458302">
               <span>Экология и утилизация</span>
               <strong>+7 914 545-83-02</strong>
-              <small>Никита</small>
             </a>
             <a href="mailto:texstroiinvest@inbox.ru">texstroiinvest@inbox.ru</a>
             <span>454008, г. Челябинск, ул. Линейная, д. 96, оф. 201</span>
