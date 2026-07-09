@@ -74,7 +74,7 @@ const documents: TrustDocument[] = [
     fileLabel: 'PDF, 1 лист',
     pages: [
       {
-        src: '/assets/trust/pages/company-card-page-01.webp',
+        src: '/assets/trust/pages/company-card-page-01.png',
         title: 'Карта предприятия',
         label: 'Лист 1',
       },

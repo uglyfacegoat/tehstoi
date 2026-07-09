@@ -216,7 +216,7 @@ export function Contacts() {
               <MapPin size={28} />
               <div>
                 <span>Адрес</span>
-                <strong>454008, г. Челябинск, ул. Линейная, д. 96, оф. 201</strong>
+                <strong>111123, г. Москва, Электродный проезд, д.14, стр. 3, пом.7</strong>
               </div>
             </article>
             <article>
@@ -345,7 +345,7 @@ export function Contacts() {
               <strong>+7 914 545-83-02</strong>
             </a>
             <a href="mailto:texstroiinvest@inbox.ru">texstroiinvest@inbox.ru</a>
-            <span>454008, г. Челябинск, ул. Линейная, д. 96, оф. 201</span>
+            <span>111123, г. Москва, Электродный проезд, д.14, стр. 3, пом.7</span>
           </div>
         </nav>
       </footer>
